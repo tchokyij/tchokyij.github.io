@@ -1,0 +1,21 @@
+
+  <style>
+    .center{
+      text-align:right;
+    }
+    p {
+      color:green;
+      text-align:right;
+    }
+    .blue{
+      color:green;
+    }
+    .blue{
+      color:blue;
+      text-align:left;
+    }
+    <button>
+      click me
+    </button>
+
+  </style>
