@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <!--this is my head tag -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="myystyle.css">
+    <!--<script src="script.js"></script>-->
+
+    <style>
+    .right{
+      text-align:right;
+    }
+    p {
+      color:green;
+      text-align:right;
+    }
+    .blue{
+      color:green;
+    }
+    .blue{
+      color:blue;
+      text-align:center;
+    }
+    .center{
+      text-align:center;
+      color:black;
+    }
+  </style>
+
+    <meta charset = "utf-8"
+
+    <title>
+      ChicTech
+    </title>
+
+  </head>
+
+  <!--body starts -->
+  <body>
+    <h1>
+      hi my name is tenzin chokyi jamyang!
+    </h1>
+    </h2>
+      IT'S SATURDAY! YAY
+    </h2>
+    <h3>
+      <p class = "center">11/11/18
+    </h3>
+  <p>my favorite color is green </p>
+  <p class = "blue">though blue is nice too </p>
+
+  <button onclick = "clickFunction()"> click me! </button>
+    <p id="display_text"></p>
+    <script>
+    function clickFunction() {
+      document.getElementById("display_text").innerHTML="wow you clicked a button";
+    }
+    </script>
+
+  <p class= "center"><iframe src="https://giphy.com/embed/l1KVcrdl7rJpFnY2s" width="500" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a </a></p>
+
+  </body>
+
+  <body>
+  <h3>
+    save the earth!
+      <p class = "center">throw away your trash!</p>
+      <p class = "center">always reuse, reduce, and recycle</p>
+  </h3>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+ <!-- Full-width images with number and caption text -->
+ <div class="mySlides fade">
+   <div class="numbertext">1 / 3</div>
+   <iframe src="https://giphy.com/embed/3oxHQk2aTC2bCYxoRi" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a</a></p>
+   <div class="text">cute penguin</div>
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 3</div>
+   <iframe src="https://giphy.com/embed/3oz8xHdY14MhvvX8yI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a</a></p>
+   <div class="text">saying goodbye to autumn</div>
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">3 / 3</div>
+   <img src="img3.jpg" style="width:100%">
+   <div class="text">Caption Three</div>
+ </div>
+
+ <!-- Next and previous buttons -->
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</body>
+
+
+</html>
